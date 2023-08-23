@@ -1,0 +1,27 @@
+---
+interface Props {
+  corazon: string;
+  encabezado: string;
+  tel: string;
+}
+
+const { corazon, encabezado, tel } = Astro.props;
+---
+
+<div class="">
+  <h1>{corazon}</h1>
+  <h3>{encabezado}</h3>
+  <h2 class="btn">{tel}</h2>
+</div>
+
+<style>
+  h1 {
+    background-color: aquamarine;
+    text-align: center;
+  }
+  .btn {
+    text-align: center;
+    background-color: rgb(193, 117, 24);
+    font-size: 50px;
+  }
+</style>
